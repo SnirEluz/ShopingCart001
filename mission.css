@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.container .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  width: 100%;
+  background-color: rgba(250, 250, 250, 0.671);
+  overflow-y: auto;
+}
+
+.container .items .header {
+  position: -webkit-sticky;
+  position: sticky;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 900;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  background-color: #e4e4e4;
+  -webkit-box-shadow: 0px 1px 16px 0px #dadada;
+          box-shadow: 0px 1px 16px 0px #dadada;
+  border-right: 1px solid white;
+}
+
+.container .items .header h1 {
+  margin-left: 20px;
+  font-family: "roboto";
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.container .items .itemDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 200px;
+  height: 300px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 1px 16px 0px #c7c7c7;
+          box-shadow: 0px 1px 16px 0px #c7c7c7;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.container .items .itemDiv .itemDivExit {
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 12px;
+  font-family: "roboto";
+  font-weight: 600;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.container .items .itemDiv .itemImg {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 170px;
+  width: 180px;
+  border-radius: 15px;
+}
+
+.container .items .itemDiv .itemName {
+  margin-left: 12px;
+  font-family: "roboto";
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.container .items .itemDiv .itemPrice {
+  margin-left: 12px;
+  font-family: "roboto";
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.container .items .itemDiv .itemCategory {
+  margin-left: 12px;
+  font-family: "roboto";
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.container .items .itemDiv:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.container .addItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 270px;
+  min-width: 270px;
+  background-color: #e4e4e4;
+  -webkit-box-shadow: 0px 1px 16px 0px #dadada;
+          box-shadow: 0px 1px 16px 0px #dadada;
+}
+
+.container .addItems h1 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 30px 0px 30px 24px;
+  font-family: "roboto";
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.container .addItems h3 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 24px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-family: "roboto";
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.container .addItems input {
+  width: 85%;
+  height: 30px;
+  border: 0;
+  border-radius: 10px;
+  padding-left: 10px;
+  outline: none;
+}
+
+.container .addItems input:focus {
+  border-bottom: 1px solid black;
+}
+
+.container .addItems select {
+  width: 85%;
+  height: 32px;
+  border: 0;
+  border-radius: 10px;
+  outline: none;
+  color: #383838;
+  cursor: pointer;
+}
+
+.container .addItems select:focus {
+  border-bottom: 1px solid black;
+}
+
+.container .addItems button {
+  margin-top: 18px;
+  width: 85%;
+  height: 32px;
+  border: 0;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  -webkit-box-shadow: 0px 1px 8px 0px #c7c7c7;
+          box-shadow: 0px 1px 8px 0px #c7c7c7;
+  cursor: pointer;
+}
+
+.container .error {
+  text-align: center;
+  font-family: "roboto";
+  font-weight: 300;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 200px;
+}
+/*# sourceMappingURL=mission.css.map */

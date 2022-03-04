@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mission.css">
+</head>
+<body>
+    <div class="container">
+        <!-- items -->
+        <div class="items">
+            <div class="header">
+                <h1>MY CART</h1>
+            </div>
+        </div>
+        <!-- addItems -->
+        <div class="addItems">
+            <h1>Add Items</h1>
+            <!-- Name -->
+            <h3 class="h3Name">Name</h3>
+            <input class="Name" type="text">
+            <!-- Price -->
+            <h3 class="h3Name">Price</h3>
+            <input class="Price" type="number" min="1">
+            <!-- Category -->
+            <h3 class="h3Name">Category</h3>
+            <select class="Select" name="">
+                <option class="optionDrinks" value="Drinks">Drinks</option>
+                <option class="optionMeat" value="Meat">Meat</option>
+                <option class="optionDairy" value="Dairy">Dairy</option>
+                <option class="optionSnacks" value="Snacks">Snacks</option>
+                <option class="optionBasic" value="Basic">Basic</option>
+            </select>
+            <!-- Image -->
+            <h3 class="h3Name">Image (url)</h3>
+            <input class="Url" type="text">
+            <!-- addItem -->
+            <button class="addItem">Add Item</button>
+        </div>
+    </div>
+    <script src="mission.js"></script>
+</body>
+</html>
